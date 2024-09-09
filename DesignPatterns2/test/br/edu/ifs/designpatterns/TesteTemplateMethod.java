@@ -12,8 +12,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import br.edu.ifs.designpatterns.State.Exception;
-import br.edu.ifs.designpatterns.State.java;
 import br.edu.ifs.designpatterns.template.Bebida;
 import br.edu.ifs.designpatterns.template.impl.Cafe;
 import br.edu.ifs.designpatterns.template.impl.Cappuccino;

@@ -1,7 +1,7 @@
-package br.edu.ifs.designpatterns.AbstractFactory;
+package br.edu.ifs.designpatterns.abstractfactory;
 
 public interface Botao {
 	
-	public void obterCor();
+	public String obterCor();
 
 }

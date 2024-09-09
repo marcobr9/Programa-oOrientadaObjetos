@@ -15,7 +15,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import br.edu.ifs.designpatterns.State.Exception;
 import br.edu.ifs.designpatterns.proxy.Arquivo;
 import br.edu.ifs.designpatterns.proxy.impl.ArquivoProxy;
 import br.edu.ifs.designpatterns.proxy.impl.Permissao;

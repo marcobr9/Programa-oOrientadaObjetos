@@ -12,7 +12,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import br.edu.ifs.designpatterns.State.Exception;
 import br.edu.ifs.designpatterns.adapter.Repositorio;
 import br.edu.ifs.designpatterns.adapter.RepositorioLista;
 import br.edu.ifs.designpatterns.adapter.RepositorioString;

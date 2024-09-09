@@ -11,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import br.edu.ifs.designpatterns.State.Exception;
 import br.edu.ifs.designpatterns.command.Comando;
 import br.edu.ifs.designpatterns.command.ControleRemoto;
 import br.edu.ifs.designpatterns.command.Luz;

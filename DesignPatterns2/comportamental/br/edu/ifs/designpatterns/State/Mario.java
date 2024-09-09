@@ -1,35 +1,47 @@
-package br.edu.ifs.designpatterns.State;
+package br.edu.ifs.designpatterns.state;
 
-public class Mario implements State{
+public class Mario {
+	
+	private State state;
 
-	@Override
-	public State pegarCogumelo() {
-		return new SuperMario();
+	public Mario() {
+		this.state= new MiniMario();
 	}
-
-	@Override
-	public State pegarFlor() {
-		return new MarioFogo();
-	}
-
-	@Override
-	public State pegarPena() {
+	
+	
+	public String atacar() {
 		// TODO Auto-generated method stub
-		return new MarioVoador();
+		return state.atacar();
 	}
 
-	@Override
-	public State sofreDano() {
-		// TODO Auto-generated method stub
-		return MarioMorto();
-	}
-
-	public String atacar(){
-		return "ATAQUE_PEQUENO";
-	}
-
+	
 	public String obterEstado() {
-		return "MARIO_PEQUENO";
+		// TODO Auto-generated method stub
+		return state.obterEstado();
+	}
+
+	
+	public void pegarCogumelo() {
+		// TODO Auto-generated method stub
+		this.state = state.pegarCogumelo();
+	}
+
+	
+	public void pegarFlor() {
+		// TODO Auto-generated method stub
+		this.state =  state.pegarFlor();
+	}
+
+
+	public void pegarPena() {
+		// TODO Auto-generated method stub
+		this.state =  state.pegarPena();
+	}
+
+
+	public void sofreDano() {
+		// TODO Auto-generated method stub
+		this.state = this.state.sofreDano();
 	}
 
 }

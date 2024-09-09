@@ -14,7 +14,6 @@ import java.util.List;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import br.edu.ifs.designpatterns.State.Exception;
 import br.edu.ifs.designpatterns.observer.Observador;
 import br.edu.ifs.designpatterns.observer.Sujeito;
 import br.edu.ifs.designpatterns.observer.impl.Cliente;

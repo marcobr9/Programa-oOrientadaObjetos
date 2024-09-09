@@ -1,14 +1,28 @@
-package br.edu.ifs.designpatterns.State;
+package br.edu.ifs.designpatterns.state;
 
 public class MarioFogo implements State{
+	
+	@Override
+	public String atacar() {
+		// TODO Auto-generated method stub
+		return "Bola de fogo";
+	}
+
+	@Override
+	public String obterEstado() {
+		// TODO Auto-generated method stub
+		return "Mario de fogo";
+	}
 
 	@Override
 	public State pegarCogumelo() {
+		// TODO Auto-generated method stub
 		return this;
 	}
 
 	@Override
 	public State pegarFlor() {
+		// TODO Auto-generated method stub
 		return this;
 	}
 
@@ -23,13 +37,6 @@ public class MarioFogo implements State{
 		// TODO Auto-generated method stub
 		return new SuperMario();
 	}
-	
-	public String atacar(){
-		return "ATAQUE_FOGO";
-	}
 
-	public String obterEstado() {
-		return "MARIO_FOGO";
-	}
 
 }

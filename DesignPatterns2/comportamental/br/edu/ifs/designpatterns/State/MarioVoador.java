@@ -1,6 +1,18 @@
-package br.edu.ifs.designpatterns.State;
+package br.edu.ifs.designpatterns.state;
 
 public class MarioVoador implements State{
+	
+	@Override
+	public String atacar() {
+		// TODO Auto-generated method stub
+		return "Capa giratória";
+	}
+
+	@Override
+	public String obterEstado() {
+		// TODO Auto-generated method stub
+		return "Mario voador";
+	}
 
 	@Override
 	public State pegarCogumelo() {
@@ -17,21 +29,13 @@ public class MarioVoador implements State{
 	@Override
 	public State pegarPena() {
 		// TODO Auto-generated method stub
-		return this;
+		return this ;
 	}
 
 	@Override
 	public State sofreDano() {
 		// TODO Auto-generated method stub
 		return new SuperMario();
-	}
-	
-	public String atacar(){
-		return "ATAQUE_PENA";
-	}
-
-	public String obterEstado() {
-		return "MARIO_VOADOR";
 	}
 
 }

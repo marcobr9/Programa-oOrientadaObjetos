@@ -10,7 +10,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import br.edu.ifs.designpatterns.State.Exception;
 import br.edu.ifs.designpatterns.factorymethod.FabricaPersonagens;
 import br.edu.ifs.designpatterns.factorymethod.Personagem;
 import br.edu.ifs.designpatterns.factorymethod.impl.Anao;
