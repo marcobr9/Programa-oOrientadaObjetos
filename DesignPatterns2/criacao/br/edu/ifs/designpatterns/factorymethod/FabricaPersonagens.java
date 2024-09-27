@@ -7,59 +7,29 @@ import br.edu.ifs.designpatterns.factorymethod.impl.Orc;
 
 public class FabricaPersonagens{
 	
-	private String tipo;
-	private Personagem personagem;
 	
 	
 	
-	public FabricaPersonagens(String tipo, Personagem personagem) {
-		super();
-		this.tipo = tipo;
-		this.personagem = personagem;
-	}
 
 
-	public void criarPersonagem(String tipo) {
+
+	public static Personagem criarPersonagem (String personagem) {
 		
-		if(tipo=="orc") {
-			Personagem orc= new Orc();
-		}else if(tipo=="anão") {
-			Personagem anao= new Anao();
-		}else if(tipo=="elfo") {
-			Personagem elfo= new Elfo();
-		}else if(tipo=="humano") {
-			Personagem humano= new Humano();
-		}else if(tipo=="outro") {
+		if(personagem.equals("orc")) {
+			return new Orc();
+		}else if(personagem.equals("anão")) {
+			return new Anao();
+		}else if(personagem.equals("elfo")) {
+			return new Elfo();
+		}else if(personagem.equals("humano")) {
+			return new Humano();
+		}else if(personagem.equals("outro")) {
 			throw new IllegalStateException("Personagem não encontrado!");
 		}
+		return null;
 			
 	}
 	
-
-	public String getTipo() {
-		return tipo;
-	}
-
-
-	@Override
-	public String atacar() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	@Override
-	public String defender() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	@Override
-	public String usarMagia() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 
 
